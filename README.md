@@ -19,3 +19,15 @@ An implementation of a self-healing classification pipeline using:
 ```bash
 git clone https://github.com/yourusername/self-healing-classification-dag.git
 cd self-healing-classification-dag
+
+##Example Workflow
+
+$ python src/classify.py
+Enter text to classify: The movie was painfully slow and boring.
+
+[InferenceNode] Predicted label: Positive | Confidence: 54.0%
+[ConfidenceCheckNode] Confidence too low. Triggering fallback...
+[FallbackNode] I thought this was Positive, but I'm not sure. Was this actually Negative? (yes/no)
+Your answer: yes
+
+Final Label: Negative (Corrected via user clarification)
