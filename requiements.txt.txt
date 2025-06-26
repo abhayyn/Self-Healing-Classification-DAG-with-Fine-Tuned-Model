@@ -1,0 +1,10 @@
+transformers>=4.30.0
+datasets>=2.12.0
+torch>=2.0.0
+langgraph>=0.1.0
+peft>=0.4.0
+accelerate>=0.20.0
+pandas>=1.5.0
+numpy>=1.23.0
+huggingface-hub>=0.15.0
+sentencepiece>=0.1.99  # For optional backup model
